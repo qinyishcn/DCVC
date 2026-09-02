@@ -1,0 +1,94 @@
+{
+  "frame": "frame_016.png",
+  "header_bytes": 20,
+  "framed_bytes": 9360,
+  "framed_sha256": "5db76067f63e42ad18db5089c4d553e1f1f69e436040daff849806f39fbd58b0",
+  "component_ranges": [
+    {
+      "name": "z",
+      "start": 20,
+      "end": 840,
+      "bytes": 820,
+      "sha256": "5a2be0b116c9acc823027e5d5a0ca8a692e7f8234a83b5d2a11679b48cf4484b"
+    },
+    {
+      "name": "y0",
+      "start": 840,
+      "end": 3680,
+      "bytes": 2840,
+      "sha256": "dbac37a44b072154b2d78b393514c495b657914c97d0ac03acd6ac0c30399be1"
+    },
+    {
+      "name": "y1",
+      "start": 3680,
+      "end": 5852,
+      "bytes": 2172,
+      "sha256": "be1d119d16e65e27150c9122623d42a309657976976d4852a1c129c18abda38b"
+    },
+    {
+      "name": "y2",
+      "start": 5852,
+      "end": 7752,
+      "bytes": 1900,
+      "sha256": "f640caf5cd3a82ca12d5267e82dab54f335df4e423bc78fad96ecea593a38b2c"
+    },
+    {
+      "name": "y3",
+      "start": 7752,
+      "end": 9360,
+      "bytes": 1608,
+      "sha256": "587e909985093b2bcee6506b31957b884cae14b5ec46df0c8c490df961123480"
+    }
+  ],
+  "packets": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 1400,
+      "bytes": 1400,
+      "sha256": "99bc21c61f53a76cd605162cca18acd91db9ea62098bcb4074620c0ad596bb99"
+    },
+    {
+      "index": 1,
+      "start": 1400,
+      "end": 2800,
+      "bytes": 1400,
+      "sha256": "55da202f8e08e63862648e5904ee8063de3f3a84b999f9dfa3138447ffa17c2f"
+    },
+    {
+      "index": 2,
+      "start": 2800,
+      "end": 4200,
+      "bytes": 1400,
+      "sha256": "19de1043567378f33563c372be62b98ec3ec3d08278b497970c66910df00f60b"
+    },
+    {
+      "index": 3,
+      "start": 4200,
+      "end": 5600,
+      "bytes": 1400,
+      "sha256": "a6a8e5a09692af6477515683dd1a0e697777446fd2cfbbfe8f3fd4901ea48f01"
+    },
+    {
+      "index": 4,
+      "start": 5600,
+      "end": 7000,
+      "bytes": 1400,
+      "sha256": "a11e3da36e9a02f8b6fc756a0bc4d691cc70c1fb2d9315a21231f8e5c0c6adca"
+    },
+    {
+      "index": 5,
+      "start": 7000,
+      "end": 8400,
+      "bytes": 1400,
+      "sha256": "f0a735903db1cf58b980e383cb0ebe14d5a35086b163c517ba998808d5b5dba2"
+    },
+    {
+      "index": 6,
+      "start": 8400,
+      "end": 9360,
+      "bytes": 960,
+      "sha256": "dc4a5814ae1b49a740c15001b623ed0598dbb22b0f8e39e96e03b089e7079226"
+    }
+  ]
+}

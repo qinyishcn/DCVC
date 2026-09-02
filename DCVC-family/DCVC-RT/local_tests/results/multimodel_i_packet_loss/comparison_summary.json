@@ -1,0 +1,117 @@
+{
+  "source_fps": 14.75,
+  "combination_count": 9,
+  "combinations": [
+    {
+      "model": "bmshj2018-hyperprior",
+      "model_label": "Balle Hyperprior 2018",
+      "qp": 1,
+      "qp_label": "quality-1",
+      "mean_framed_bytes": 10764.375,
+      "mean_framed_bpp": 0.09344075520833334,
+      "mean_framed_kbps": 1270.19625,
+      "encode_fps": 24.699146262945014,
+      "decode_fps": 21.33911152213846
+    },
+    {
+      "model": "bmshj2018-hyperprior",
+      "model_label": "Balle Hyperprior 2018",
+      "qp": 4,
+      "qp_label": "quality-4",
+      "mean_framed_bytes": 29005.875,
+      "mean_framed_bpp": 0.251787109375,
+      "mean_framed_kbps": 3422.69325,
+      "encode_fps": 24.42513506445147,
+      "decode_fps": 20.516378493189915
+    },
+    {
+      "model": "bmshj2018-hyperprior",
+      "model_label": "Balle Hyperprior 2018",
+      "qp": 6,
+      "qp_label": "quality-6",
+      "mean_framed_bytes": 53708.75,
+      "mean_framed_bpp": 0.46622178819444443,
+      "mean_framed_kbps": 6337.6325,
+      "encode_fps": 14.264822698119556,
+      "decode_fps": 11.93037213711062
+    },
+    {
+      "model": "dcvc-rt",
+      "model_label": "DCVC-RT 2025",
+      "qp": 0,
+      "qp_label": "index-0",
+      "mean_framed_bytes": 2841.8125,
+      "mean_framed_bpp": 0.024668511284722222,
+      "mean_framed_kbps": 335.333875,
+      "encode_fps": 12.153533082504604,
+      "decode_fps": 15.613411514541875
+    },
+    {
+      "model": "dcvc-rt",
+      "model_label": "DCVC-RT 2025",
+      "qp": 31,
+      "qp_label": "index-31",
+      "mean_framed_bytes": 12081.59375,
+      "mean_framed_bpp": 0.10487494574652778,
+      "mean_framed_kbps": 1425.6280625,
+      "encode_fps": 12.215229620560365,
+      "decode_fps": 15.66172259747307
+    },
+    {
+      "model": "dcvc-rt",
+      "model_label": "DCVC-RT 2025",
+      "qp": 63,
+      "qp_label": "index-63",
+      "mean_framed_bytes": 48354.8125,
+      "mean_framed_bpp": 0.4197466362847222,
+      "mean_framed_kbps": 5705.867875,
+      "encode_fps": 12.1826014833882,
+      "decode_fps": 14.988542192117219
+    },
+    {
+      "model": "mbt2018-mean",
+      "model_label": "Minnen Mean-Scale 2018",
+      "qp": 1,
+      "qp_label": "quality-1",
+      "mean_framed_bytes": 9406.125,
+      "mean_framed_bpp": 0.081650390625,
+      "mean_framed_kbps": 1109.92275,
+      "encode_fps": 24.669357740318805,
+      "decode_fps": 21.317158500873486
+    },
+    {
+      "model": "mbt2018-mean",
+      "model_label": "Minnen Mean-Scale 2018",
+      "qp": 4,
+      "qp_label": "quality-4",
+      "mean_framed_bytes": 26881.875,
+      "mean_framed_bpp": 0.233349609375,
+      "mean_framed_kbps": 3172.06125,
+      "encode_fps": 24.220241458777213,
+      "decode_fps": 20.56421312567575
+    },
+    {
+      "model": "mbt2018-mean",
+      "model_label": "Minnen Mean-Scale 2018",
+      "qp": 6,
+      "qp_label": "quality-6",
+      "mean_framed_bytes": 50680.625,
+      "mean_framed_bpp": 0.4399359809027778,
+      "mean_framed_kbps": 5980.31375,
+      "encode_fps": 13.937991097956491,
+      "decode_fps": 11.711943449535164
+    }
+  ],
+  "policy_rule": {
+    "objective": "minimum framed bitrate meeting both PSNR and decodability constraints",
+    "minimum_decodable_frame_percent": 99.0,
+    "psnr_targets_db": [
+      24,
+      28,
+      30,
+      32,
+      35,
+      38
+    ]
+  }
+}

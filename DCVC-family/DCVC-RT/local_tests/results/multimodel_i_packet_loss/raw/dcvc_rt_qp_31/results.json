@@ -1,0 +1,1151 @@
+{
+  "source": {
+    "title": "Starigrad 105323",
+    "web_page": "https://commons.wikimedia.org/wiki/File:Starigrad_105323.webm",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Starigrad_105323.webm",
+    "license": "CC BY-SA 3.0 / GFDL (see source page)",
+    "source_video": "/mnt/c/Users/qinyi/Documents/AItest 2/DCVC/DCVC-family/DCVC-RT/local_tests/natural_720p/starigrad_105323_720p.webm",
+    "source_sha256": "aee660c4ef1aa45dc169a0bf12bf2525869136d8dba7c1cce6a9d7b0c9f21bff",
+    "resolution": [
+      1280,
+      720
+    ],
+    "sampled_frames": 32
+  },
+  "test": {
+    "checkpoint": "/mnt/c/Users/qinyi/Documents/AItest 2/DCVC/DCVC-family/DCVC-RT/checkpoints/cvpr2025_image.pth.tar",
+    "qp": 31,
+    "force_zero_thres": 0.12,
+    "packet_payload_bytes": 1400,
+    "framing": "20-byte big-endian component length header + independent z/y0/y1/y2/y3 rANS streams",
+    "loss_policy": "drop packets from frame tail; incomplete component and all dependent later components are discarded",
+    "missing_z_policy": "neutral-gray concealment; frame marked undecodable",
+    "device": "NVIDIA GeForce RTX 3070",
+    "torch": "2.4.1+cu121",
+    "cuda": "12.1"
+  },
+  "i_frame_fps": {
+    "measured_frames": 32,
+    "warmup_frames_excluded": 5,
+    "mean_encode_ms": 81.8650185925957,
+    "p50_encode_ms": 81.8843920000063,
+    "p95_encode_ms": 82.39067719991908,
+    "encode_fps": 12.215229620560365,
+    "mean_decode_ms": 63.849936925925654,
+    "p50_decode_ms": 63.72337700008757,
+    "p95_decode_ms": 65.41377290006949,
+    "decode_fps": 15.66172259747307
+  },
+  "bitstream": {
+    "mean_native_monolithic_bytes": 12047.46875,
+    "mean_separately_framed_bytes": 12081.59375,
+    "mean_packets_per_frame": 9.21875,
+    "mean_native_psnr_db": 34.28145976993501
+  },
+  "loss_results": [
+    {
+      "target_packet_loss_percent": 0.0,
+      "actual_packet_loss_percent": 0.0,
+      "received_bytes_percent": 100.0,
+      "mean_psnr_db": 34.28145976993501,
+      "minimum_psnr_db": 32.34985228371578,
+      "maximum_psnr_db": 38.82062297378166,
+      "decodable_frame_percent": 100.0,
+      "stage_frame_counts": {
+        "z+y0+y1+y2+y3": 32
+      }
+    },
+    {
+      "target_packet_loss_percent": 1.0,
+      "actual_packet_loss_percent": 1.0169491525423728,
+      "received_bytes_percent": 99.81454226599864,
+      "mean_psnr_db": 34.011089052468414,
+      "minimum_psnr_db": 30.384949506606567,
+      "maximum_psnr_db": 38.82062297378166,
+      "decodable_frame_percent": 100.0,
+      "stage_frame_counts": {
+        "z+y0+y1+y2+y3": 29,
+        "z+y0+y1+y2": 3
+      }
+    },
+    {
+      "target_packet_loss_percent": 2.0,
+      "actual_packet_loss_percent": 2.0338983050847457,
+      "received_bytes_percent": 99.49277180421664,
+      "mean_psnr_db": 33.762256932166935,
+      "minimum_psnr_db": 30.384949506606567,
+      "maximum_psnr_db": 38.82062297378166,
+      "decodable_frame_percent": 100.0,
+      "stage_frame_counts": {
+        "z+y0+y1+y2+y3": 26,
+        "z+y0+y1+y2": 6
+      }
+    },
+    {
+      "target_packet_loss_percent": 5.0,
+      "actual_packet_loss_percent": 5.084745762711864,
+      "received_bytes_percent": 98.27087175481297,
+      "mean_psnr_db": 33.04795660161389,
+      "minimum_psnr_db": 30.370084354181436,
+      "maximum_psnr_db": 38.82062297378166,
+      "decodable_frame_percent": 100.0,
+      "stage_frame_counts": {
+        "z+y0+y1+y2+y3": 17,
+        "z+y0+y1+y2": 15
+      }
+    },
+    {
+      "target_packet_loss_percent": 10.0,
+      "actual_packet_loss_percent": 10.169491525423728,
+      "received_bytes_percent": 95.71300350998807,
+      "mean_psnr_db": 32.1039627296713,
+      "minimum_psnr_db": 30.370084354181436,
+      "maximum_psnr_db": 38.82062297378166,
+      "decodable_frame_percent": 100.0,
+      "stage_frame_counts": {
+        "z+y0+y1+y2": 30,
+        "z+y0+y1+y2+y3": 2
+      }
+    },
+    {
+      "target_packet_loss_percent": 20.0,
+      "actual_packet_loss_percent": 20.0,
+      "received_bytes_percent": 85.46057923856279,
+      "mean_psnr_db": 31.343963182632336,
+      "minimum_psnr_db": 27.695242710340846,
+      "maximum_psnr_db": 36.29932469502442,
+      "decodable_frame_percent": 100.0,
+      "stage_frame_counts": {
+        "z+y0+y1+y2": 24,
+        "z+y0": 1,
+        "z+y0+y1": 7
+      }
+    },
+    {
+      "target_packet_loss_percent": 30.0,
+      "actual_packet_loss_percent": 30.16949152542373,
+      "received_bytes_percent": 74.5969462845082,
+      "mean_psnr_db": 29.86321614819937,
+      "minimum_psnr_db": 27.630820761854615,
+      "maximum_psnr_db": 36.29932469502442,
+      "decodable_frame_percent": 100.0,
+      "stage_frame_counts": {
+        "z+y0+y1+y2": 4,
+        "z+y0": 1,
+        "z+y0+y1": 27
+      }
+    },
+    {
+      "target_packet_loss_percent": 40.0,
+      "actual_packet_loss_percent": 40.0,
+      "received_bytes_percent": 64.09543442892209,
+      "mean_psnr_db": 27.94172352217931,
+      "minimum_psnr_db": 24.979597605452053,
+      "maximum_psnr_db": 33.54621013131005,
+      "decodable_frame_percent": 100.0,
+      "stage_frame_counts": {
+        "z+y0": 18,
+        "z+y0+y1": 12,
+        "z": 2
+      }
+    },
+    {
+      "target_packet_loss_percent": 50.0,
+      "actual_packet_loss_percent": 50.16949152542373,
+      "received_bytes_percent": 53.2318014748675,
+      "mean_psnr_db": 26.026256352213675,
+      "minimum_psnr_db": 11.669849990896733,
+      "maximum_psnr_db": 29.97902384668616,
+      "decodable_frame_percent": 96.875,
+      "stage_frame_counts": {
+        "z": 5,
+        "concealment": 1,
+        "z+y0": 26
+      }
+    },
+    {
+      "target_packet_loss_percent": 60.0,
+      "actual_packet_loss_percent": 60.0,
+      "received_bytes_percent": 42.73028961928139,
+      "mean_psnr_db": 24.78070571950019,
+      "minimum_psnr_db": 11.669849990896733,
+      "maximum_psnr_db": 29.36318977699209,
+      "decodable_frame_percent": 96.875,
+      "stage_frame_counts": {
+        "z": 17,
+        "concealment": 1,
+        "z+y0": 14
+      }
+    },
+    {
+      "target_packet_loss_percent": 70.0,
+      "actual_packet_loss_percent": 70.16949152542372,
+      "received_bytes_percent": 31.866656665226806,
+      "mean_psnr_db": 21.3615343302906,
+      "minimum_psnr_db": 11.446070578313869,
+      "maximum_psnr_db": 27.43250949858041,
+      "decodable_frame_percent": 84.375,
+      "stage_frame_counts": {
+        "concealment": 5,
+        "z": 27
+      }
+    },
+    {
+      "target_packet_loss_percent": 80.0,
+      "actual_packet_loss_percent": 80.0,
+      "received_bytes_percent": 21.365144809640697,
+      "mean_psnr_db": 19.653218939580114,
+      "minimum_psnr_db": 10.043680885498311,
+      "maximum_psnr_db": 24.864261245914946,
+      "decodable_frame_percent": 71.875,
+      "stage_frame_counts": {
+        "concealment": 9,
+        "z": 23
+      }
+    },
+    {
+      "target_packet_loss_percent": 90.0,
+      "actual_packet_loss_percent": 90.16949152542372,
+      "received_bytes_percent": 10.501511855586106,
+      "mean_psnr_db": 10.840343154811766,
+      "minimum_psnr_db": 9.594776862387628,
+      "maximum_psnr_db": 14.664988479823627,
+      "decodable_frame_percent": 0.0,
+      "stage_frame_counts": {
+        "concealment": 32
+      }
+    },
+    {
+      "target_packet_loss_percent": 95.0,
+      "actual_packet_loss_percent": 94.91525423728814,
+      "received_bytes_percent": 5.431816477027296,
+      "mean_psnr_db": 10.840343154811766,
+      "minimum_psnr_db": 9.594776862387628,
+      "maximum_psnr_db": 14.664988479823627,
+      "decodable_frame_percent": 0.0,
+      "stage_frame_counts": {
+        "concealment": 32
+      }
+    },
+    {
+      "target_packet_loss_percent": 98.0,
+      "actual_packet_loss_percent": 97.96610169491525,
+      "received_bytes_percent": 2.1727265908109183,
+      "mean_psnr_db": 10.840343154811766,
+      "minimum_psnr_db": 9.594776862387628,
+      "maximum_psnr_db": 14.664988479823627,
+      "decodable_frame_percent": 0.0,
+      "stage_frame_counts": {
+        "concealment": 32
+      }
+    },
+    {
+      "target_packet_loss_percent": 100.0,
+      "actual_packet_loss_percent": 100.0,
+      "received_bytes_percent": 0.0,
+      "mean_psnr_db": 10.840343154811766,
+      "minimum_psnr_db": 9.594776862387628,
+      "maximum_psnr_db": 14.664988479823627,
+      "decodable_frame_percent": 0.0,
+      "stage_frame_counts": {
+        "concealment": 32
+      }
+    }
+  ],
+  "sample_frame": {
+    "frame": "frame_016.png",
+    "reference_image": "reconstructions/reference.png",
+    "stage_psnr_db": {
+      "z": 22.647654018752974,
+      "z+y0": 26.23335017010391,
+      "z+y0+y1": 28.991805349103895,
+      "z+y0+y1+y2": 31.641370681772063,
+      "z+y0+y1+y2+y3": 33.94381509698483,
+      "concealment": 10.743687558393923
+    },
+    "loss_results": [
+      {
+        "target_loss_percent": 0.0,
+        "packet_count": 9,
+        "dropped_packets": 0,
+        "actual_packet_loss_percent": 0.0,
+        "retained_bytes": 12080,
+        "retained_bytes_percent": 100.0,
+        "stage": "z+y0+y1+y2+y3",
+        "psnr_db": 33.94381509698483,
+        "image": "reconstructions/plr_000.0_z_y0_y1_y2_y3.png"
+      },
+      {
+        "target_loss_percent": 1.0,
+        "packet_count": 9,
+        "dropped_packets": 0,
+        "actual_packet_loss_percent": 0.0,
+        "retained_bytes": 12080,
+        "retained_bytes_percent": 100.0,
+        "stage": "z+y0+y1+y2+y3",
+        "psnr_db": 33.94381509698483,
+        "image": "reconstructions/plr_001.0_z_y0_y1_y2_y3.png"
+      },
+      {
+        "target_loss_percent": 2.0,
+        "packet_count": 9,
+        "dropped_packets": 0,
+        "actual_packet_loss_percent": 0.0,
+        "retained_bytes": 12080,
+        "retained_bytes_percent": 100.0,
+        "stage": "z+y0+y1+y2+y3",
+        "psnr_db": 33.94381509698483,
+        "image": "reconstructions/plr_002.0_z_y0_y1_y2_y3.png"
+      },
+      {
+        "target_loss_percent": 5.0,
+        "packet_count": 9,
+        "dropped_packets": 0,
+        "actual_packet_loss_percent": 0.0,
+        "retained_bytes": 12080,
+        "retained_bytes_percent": 100.0,
+        "stage": "z+y0+y1+y2+y3",
+        "psnr_db": 33.94381509698483,
+        "image": "reconstructions/plr_005.0_z_y0_y1_y2_y3.png"
+      },
+      {
+        "target_loss_percent": 10.0,
+        "packet_count": 9,
+        "dropped_packets": 1,
+        "actual_packet_loss_percent": 11.11111111111111,
+        "retained_bytes": 11200,
+        "retained_bytes_percent": 92.71523178807946,
+        "stage": "z+y0+y1+y2",
+        "psnr_db": 31.641370681772063,
+        "image": "reconstructions/plr_010.0_z_y0_y1_y2.png"
+      },
+      {
+        "target_loss_percent": 20.0,
+        "packet_count": 9,
+        "dropped_packets": 2,
+        "actual_packet_loss_percent": 22.22222222222222,
+        "retained_bytes": 9800,
+        "retained_bytes_percent": 81.12582781456953,
+        "stage": "z+y0+y1",
+        "psnr_db": 28.991805349103895,
+        "image": "reconstructions/plr_020.0_z_y0_y1.png"
+      },
+      {
+        "target_loss_percent": 30.0,
+        "packet_count": 9,
+        "dropped_packets": 3,
+        "actual_packet_loss_percent": 33.333333333333336,
+        "retained_bytes": 8400,
+        "retained_bytes_percent": 69.5364238410596,
+        "stage": "z+y0+y1",
+        "psnr_db": 28.991805349103895,
+        "image": "reconstructions/plr_030.0_z_y0_y1.png"
+      },
+      {
+        "target_loss_percent": 40.0,
+        "packet_count": 9,
+        "dropped_packets": 3,
+        "actual_packet_loss_percent": 33.333333333333336,
+        "retained_bytes": 8400,
+        "retained_bytes_percent": 69.5364238410596,
+        "stage": "z+y0+y1",
+        "psnr_db": 28.991805349103895,
+        "image": "reconstructions/plr_040.0_z_y0_y1.png"
+      },
+      {
+        "target_loss_percent": 50.0,
+        "packet_count": 9,
+        "dropped_packets": 4,
+        "actual_packet_loss_percent": 44.44444444444444,
+        "retained_bytes": 7000,
+        "retained_bytes_percent": 57.94701986754967,
+        "stage": "z+y0",
+        "psnr_db": 26.23335017010391,
+        "image": "reconstructions/plr_050.0_z_y0.png"
+      },
+      {
+        "target_loss_percent": 60.0,
+        "packet_count": 9,
+        "dropped_packets": 5,
+        "actual_packet_loss_percent": 55.55555555555556,
+        "retained_bytes": 5600,
+        "retained_bytes_percent": 46.35761589403973,
+        "stage": "z+y0",
+        "psnr_db": 26.23335017010391,
+        "image": "reconstructions/plr_060.0_z_y0.png"
+      },
+      {
+        "target_loss_percent": 70.0,
+        "packet_count": 9,
+        "dropped_packets": 6,
+        "actual_packet_loss_percent": 66.66666666666667,
+        "retained_bytes": 4200,
+        "retained_bytes_percent": 34.7682119205298,
+        "stage": "z",
+        "psnr_db": 22.647654018752974,
+        "image": "reconstructions/plr_070.0_z.png"
+      },
+      {
+        "target_loss_percent": 80.0,
+        "packet_count": 9,
+        "dropped_packets": 7,
+        "actual_packet_loss_percent": 77.77777777777777,
+        "retained_bytes": 2800,
+        "retained_bytes_percent": 23.178807947019866,
+        "stage": "z",
+        "psnr_db": 22.647654018752974,
+        "image": "reconstructions/plr_080.0_z.png"
+      },
+      {
+        "target_loss_percent": 90.0,
+        "packet_count": 9,
+        "dropped_packets": 8,
+        "actual_packet_loss_percent": 88.88888888888889,
+        "retained_bytes": 1400,
+        "retained_bytes_percent": 11.589403973509933,
+        "stage": "concealment",
+        "psnr_db": 10.743687558393923,
+        "image": "reconstructions/plr_090.0_concealment.png"
+      },
+      {
+        "target_loss_percent": 95.0,
+        "packet_count": 9,
+        "dropped_packets": 9,
+        "actual_packet_loss_percent": 100.0,
+        "retained_bytes": 0,
+        "retained_bytes_percent": 0.0,
+        "stage": "concealment",
+        "psnr_db": 10.743687558393923,
+        "image": "reconstructions/plr_095.0_concealment.png"
+      },
+      {
+        "target_loss_percent": 98.0,
+        "packet_count": 9,
+        "dropped_packets": 9,
+        "actual_packet_loss_percent": 100.0,
+        "retained_bytes": 0,
+        "retained_bytes_percent": 0.0,
+        "stage": "concealment",
+        "psnr_db": 10.743687558393923,
+        "image": "reconstructions/plr_098.0_concealment.png"
+      },
+      {
+        "target_loss_percent": 100.0,
+        "packet_count": 9,
+        "dropped_packets": 9,
+        "actual_packet_loss_percent": 100.0,
+        "retained_bytes": 0,
+        "retained_bytes_percent": 0.0,
+        "stage": "concealment",
+        "psnr_db": 10.743687558393923,
+        "image": "reconstructions/plr_100.0_concealment.png"
+      }
+    ]
+  },
+  "frames": [
+    {
+      "frame": "frame_001.png",
+      "native_monolithic_bytes": 6017,
+      "component_bytes": {
+        "z": 1876,
+        "y0": 1449,
+        "y1": 1084,
+        "y2": 865,
+        "y3": 757
+      },
+      "framed_component_bytes": 6051,
+      "packet_count": 5,
+      "last_packet_bytes": 451,
+      "stage_psnr_db": {
+        "z": 26.836411323605645,
+        "z+y0": 30.340027884166098,
+        "z+y0+y1": 32.807303997825024,
+        "z+y0+y1+y2": 34.35187676788044,
+        "z+y0+y1+y2+y3": 35.61601696014734,
+        "concealment": 11.446070578313869
+      }
+    },
+    {
+      "frame": "frame_002.png",
+      "native_monolithic_bytes": 4063,
+      "component_bytes": {
+        "z": 1764,
+        "y0": 838,
+        "y1": 630,
+        "y2": 442,
+        "y3": 402
+      },
+      "framed_component_bytes": 4096,
+      "packet_count": 3,
+      "last_packet_bytes": 1296,
+      "stage_psnr_db": {
+        "z": 30.047821184347793,
+        "z+y0": 33.54621013131005,
+        "z+y0+y1": 36.08344080784745,
+        "z+y0+y1+y2": 37.58826397512604,
+        "z+y0+y1+y2+y3": 38.82062297378166,
+        "concealment": 11.669849990896733
+      }
+    },
+    {
+      "frame": "frame_003.png",
+      "native_monolithic_bytes": 6166,
+      "component_bytes": {
+        "z": 1924,
+        "y0": 1459,
+        "y1": 1142,
+        "y2": 892,
+        "y3": 763
+      },
+      "framed_component_bytes": 6200,
+      "packet_count": 5,
+      "last_packet_bytes": 600,
+      "stage_psnr_db": {
+        "z": 27.13057182224068,
+        "z+y0": 30.470807954821908,
+        "z+y0+y1": 33.10877275812449,
+        "z+y0+y1+y2": 35.05330229656672,
+        "z+y0+y1+y2+y3": 36.64559187742151,
+        "concealment": 11.751207476642165
+      }
+    },
+    {
+      "frame": "frame_004.png",
+      "native_monolithic_bytes": 8043,
+      "component_bytes": {
+        "z": 1945,
+        "y0": 2002,
+        "y1": 1579,
+        "y2": 1356,
+        "y3": 1175
+      },
+      "framed_component_bytes": 8077,
+      "packet_count": 6,
+      "last_packet_bytes": 1077,
+      "stage_psnr_db": {
+        "z": 25.660499878688746,
+        "z+y0": 29.317776679030786,
+        "z+y0+y1": 31.376981272651832,
+        "z+y0+y1+y2": 33.10105392575392,
+        "z+y0+y1+y2+y3": 34.594784173293334,
+        "concealment": 11.654922703275371
+      }
+    },
+    {
+      "frame": "frame_005.png",
+      "native_monolithic_bytes": 11559,
+      "component_bytes": {
+        "z": 1975,
+        "y0": 3010,
+        "y1": 2466,
+        "y2": 2180,
+        "y3": 1942
+      },
+      "framed_component_bytes": 11593,
+      "packet_count": 9,
+      "last_packet_bytes": 393,
+      "stage_psnr_db": {
+        "z": 24.864261245914946,
+        "z+y0": 27.850805428929846,
+        "z+y0+y1": 29.715914274446924,
+        "z+y0+y1+y2": 31.28735999712985,
+        "z+y0+y1+y2+y3": 32.73863589400936,
+        "concealment": 11.56546925828432
+      }
+    },
+    {
+      "frame": "frame_006.png",
+      "native_monolithic_bytes": 14402,
+      "component_bytes": {
+        "z": 2034,
+        "y0": 3778,
+        "y1": 3221,
+        "y2": 2811,
+        "y3": 2571
+      },
+      "framed_component_bytes": 14435,
+      "packet_count": 11,
+      "last_packet_bytes": 435,
+      "stage_psnr_db": {
+        "z": 24.006050512174117,
+        "z+y0": 26.6931335109858,
+        "z+y0+y1": 28.684903878488612,
+        "z+y0+y1+y2": 30.490586105632943,
+        "z+y0+y1+y2+y3": 32.34985228371578,
+        "concealment": 11.18641336773532
+      }
+    },
+    {
+      "frame": "frame_007.png",
+      "native_monolithic_bytes": 14081,
+      "component_bytes": {
+        "z": 2070,
+        "y0": 3683,
+        "y1": 3129,
+        "y2": 2725,
+        "y3": 2488
+      },
+      "framed_component_bytes": 14115,
+      "packet_count": 11,
+      "last_packet_bytes": 115,
+      "stage_psnr_db": {
+        "z": 23.659097268523162,
+        "z+y0": 26.31127325800079,
+        "z+y0+y1": 28.458101223016598,
+        "z+y0+y1+y2": 30.436679870875135,
+        "z+y0+y1+y2+y3": 32.57653358438888,
+        "concealment": 11.510663806797513
+      }
+    },
+    {
+      "frame": "frame_008.png",
+      "native_monolithic_bytes": 9383,
+      "component_bytes": {
+        "z": 1941,
+        "y0": 2276,
+        "y1": 1941,
+        "y2": 1704,
+        "y3": 1536
+      },
+      "framed_component_bytes": 9418,
+      "packet_count": 7,
+      "last_packet_bytes": 1018,
+      "stage_psnr_db": {
+        "z": 24.921061927598167,
+        "z+y0": 27.826473688256797,
+        "z+y0+y1": 30.008189785827287,
+        "z+y0+y1+y2": 32.05326891467217,
+        "z+y0+y1+y2+y3": 34.05013113465208,
+        "concealment": 13.637009387021317
+      }
+    },
+    {
+      "frame": "frame_009.png",
+      "native_monolithic_bytes": 4691,
+      "component_bytes": {
+        "z": 1849,
+        "y0": 994,
+        "y1": 762,
+        "y2": 558,
+        "y3": 541
+      },
+      "framed_component_bytes": 4724,
+      "packet_count": 4,
+      "last_packet_bytes": 524,
+      "stage_psnr_db": {
+        "z": 28.68512477667014,
+        "z+y0": 31.974265647809833,
+        "z+y0+y1": 34.45242458645072,
+        "z+y0+y1+y2": 36.29932469502442,
+        "z+y0+y1+y2+y3": 37.96976705478086,
+        "concealment": 14.664988479823627
+      }
+    },
+    {
+      "frame": "frame_010.png",
+      "native_monolithic_bytes": 4707,
+      "component_bytes": {
+        "z": 1805,
+        "y0": 1006,
+        "y1": 753,
+        "y2": 603,
+        "y3": 554
+      },
+      "framed_component_bytes": 4741,
+      "packet_count": 4,
+      "last_packet_bytes": 541,
+      "stage_psnr_db": {
+        "z": 29.36318977699209,
+        "z+y0": 32.42708291644549,
+        "z+y0+y1": 34.58774504663761,
+        "z+y0+y1+y2": 35.84397136974955,
+        "z+y0+y1+y2+y3": 37.02776556998251,
+        "concealment": 13.122605646684631
+      }
+    },
+    {
+      "frame": "frame_011.png",
+      "native_monolithic_bytes": 7990,
+      "component_bytes": {
+        "z": 1824,
+        "y0": 1921,
+        "y1": 1591,
+        "y2": 1368,
+        "y3": 1300
+      },
+      "framed_component_bytes": 8024,
+      "packet_count": 6,
+      "last_packet_bytes": 1024,
+      "stage_psnr_db": {
+        "z": 27.43250949858041,
+        "z+y0": 29.97902384668616,
+        "z+y0+y1": 31.6886827483131,
+        "z+y0+y1+y2": 32.8614184459985,
+        "z+y0+y1+y2+y3": 34.16982660771736,
+        "concealment": 12.400975881386787
+      }
+    },
+    {
+      "frame": "frame_012.png",
+      "native_monolithic_bytes": 11205,
+      "component_bytes": {
+        "z": 2075,
+        "y0": 2857,
+        "y1": 2389,
+        "y2": 2030,
+        "y3": 1867
+      },
+      "framed_component_bytes": 11238,
+      "packet_count": 9,
+      "last_packet_bytes": 38,
+      "stage_psnr_db": {
+        "z": 23.17899574000215,
+        "z+y0": 26.520792116616132,
+        "z+y0+y1": 28.881512560608016,
+        "z+y0+y1+y2": 31.0962003497874,
+        "z+y0+y1+y2+y3": 33.207587392512224,
+        "concealment": 11.661685770506459
+      }
+    },
+    {
+      "frame": "frame_013.png",
+      "native_monolithic_bytes": 11347,
+      "component_bytes": {
+        "z": 2105,
+        "y0": 2913,
+        "y1": 2407,
+        "y2": 2087,
+        "y3": 1850
+      },
+      "framed_component_bytes": 11382,
+      "packet_count": 9,
+      "last_packet_bytes": 182,
+      "stage_psnr_db": {
+        "z": 22.960391945958527,
+        "z+y0": 26.34957254429593,
+        "z+y0+y1": 29.135116133435965,
+        "z+y0+y1+y2": 31.476820076835885,
+        "z+y0+y1+y2+y3": 33.89715359655707,
+        "concealment": 10.586017955048042
+      }
+    },
+    {
+      "frame": "frame_014.png",
+      "native_monolithic_bytes": 11237,
+      "component_bytes": {
+        "z": 2087,
+        "y0": 2932,
+        "y1": 2419,
+        "y2": 2031,
+        "y3": 1782
+      },
+      "framed_component_bytes": 11271,
+      "packet_count": 9,
+      "last_packet_bytes": 71,
+      "stage_psnr_db": {
+        "z": 22.923294491238803,
+        "z+y0": 26.424614632378464,
+        "z+y0+y1": 29.171502438845394,
+        "z+y0+y1+y2": 31.844371060999226,
+        "z+y0+y1+y2+y3": 34.4909520800816,
+        "concealment": 10.869316775526325
+      }
+    },
+    {
+      "frame": "frame_015.png",
+      "native_monolithic_bytes": 11977,
+      "component_bytes": {
+        "z": 2145,
+        "y0": 3169,
+        "y1": 2575,
+        "y2": 2178,
+        "y3": 1924
+      },
+      "framed_component_bytes": 12011,
+      "packet_count": 9,
+      "last_packet_bytes": 811,
+      "stage_psnr_db": {
+        "z": 22.795912956397046,
+        "z+y0": 26.302372774956616,
+        "z+y0+y1": 28.95734412631965,
+        "z+y0+y1+y2": 31.636832522641885,
+        "z+y0+y1+y2+y3": 34.33549552586629,
+        "concealment": 11.017145347938918
+      }
+    },
+    {
+      "frame": "frame_016.png",
+      "native_monolithic_bytes": 12046,
+      "component_bytes": {
+        "z": 2166,
+        "y0": 3177,
+        "y1": 2613,
+        "y2": 2188,
+        "y3": 1916
+      },
+      "framed_component_bytes": 12080,
+      "packet_count": 9,
+      "last_packet_bytes": 880,
+      "stage_psnr_db": {
+        "z": 22.647654018752974,
+        "z+y0": 26.23335017010391,
+        "z+y0+y1": 28.991805349103895,
+        "z+y0+y1+y2": 31.641370681772063,
+        "z+y0+y1+y2+y3": 33.94381509698483,
+        "concealment": 10.743687558393923
+      }
+    },
+    {
+      "frame": "frame_017.png",
+      "native_monolithic_bytes": 12678,
+      "component_bytes": {
+        "z": 2139,
+        "y0": 3398,
+        "y1": 2768,
+        "y2": 2319,
+        "y3": 2068
+      },
+      "framed_component_bytes": 12712,
+      "packet_count": 10,
+      "last_packet_bytes": 112,
+      "stage_psnr_db": {
+        "z": 22.494947608251124,
+        "z+y0": 26.155606095208395,
+        "z+y0+y1": 28.8459566938509,
+        "z+y0+y1+y2": 31.31681748141822,
+        "z+y0+y1+y2+y3": 33.882368856974004,
+        "concealment": 10.418728009977588
+      }
+    },
+    {
+      "frame": "frame_018.png",
+      "native_monolithic_bytes": 14065,
+      "component_bytes": {
+        "z": 2213,
+        "y0": 3824,
+        "y1": 3065,
+        "y2": 2641,
+        "y3": 2337
+      },
+      "framed_component_bytes": 14100,
+      "packet_count": 11,
+      "last_packet_bytes": 100,
+      "stage_psnr_db": {
+        "z": 22.29988017669234,
+        "z+y0": 25.897016325303245,
+        "z+y0+y1": 28.546200642274805,
+        "z+y0+y1+y2": 31.236156255202943,
+        "z+y0+y1+y2+y3": 33.8203097496936,
+        "concealment": 10.032919628178833
+      }
+    },
+    {
+      "frame": "frame_019.png",
+      "native_monolithic_bytes": 13329,
+      "component_bytes": {
+        "z": 2179,
+        "y0": 3628,
+        "y1": 2895,
+        "y2": 2465,
+        "y3": 2176
+      },
+      "framed_component_bytes": 13363,
+      "packet_count": 10,
+      "last_packet_bytes": 763,
+      "stage_psnr_db": {
+        "z": 22.408032844053768,
+        "z+y0": 26.167298831238362,
+        "z+y0+y1": 28.9074009015267,
+        "z+y0+y1+y2": 31.507390759646107,
+        "z+y0+y1+y2+y3": 34.084843946880454,
+        "concealment": 10.02194727997675
+      }
+    },
+    {
+      "frame": "frame_020.png",
+      "native_monolithic_bytes": 9075,
+      "component_bytes": {
+        "z": 2038,
+        "y0": 2336,
+        "y1": 1879,
+        "y2": 1488,
+        "y3": 1348
+      },
+      "framed_component_bytes": 9109,
+      "packet_count": 7,
+      "last_packet_bytes": 709,
+      "stage_psnr_db": {
+        "z": 24.38861005504991,
+        "z+y0": 28.008348793278458,
+        "z+y0+y1": 30.91289540557224,
+        "z+y0+y1+y2": 33.20867930205178,
+        "z+y0+y1+y2+y3": 35.368107852303815,
+        "concealment": 10.043680885498311
+      }
+    },
+    {
+      "frame": "frame_021.png",
+      "native_monolithic_bytes": 12514,
+      "component_bytes": {
+        "z": 2141,
+        "y0": 3447,
+        "y1": 2733,
+        "y2": 2260,
+        "y3": 1947
+      },
+      "framed_component_bytes": 12548,
+      "packet_count": 9,
+      "last_packet_bytes": 1348,
+      "stage_psnr_db": {
+        "z": 22.710710822113306,
+        "z+y0": 26.38081771003927,
+        "z+y0+y1": 29.18050012111933,
+        "z+y0+y1+y2": 31.97405925427975,
+        "z+y0+y1+y2+y3": 34.488423759994774,
+        "concealment": 9.789934264784542
+      }
+    },
+    {
+      "frame": "frame_022.png",
+      "native_monolithic_bytes": 14206,
+      "component_bytes": {
+        "z": 2169,
+        "y0": 3875,
+        "y1": 3143,
+        "y2": 2683,
+        "y3": 2350
+      },
+      "framed_component_bytes": 14240,
+      "packet_count": 11,
+      "last_packet_bytes": 240,
+      "stage_psnr_db": {
+        "z": 22.302470448779196,
+        "z+y0": 25.868947717515635,
+        "z+y0+y1": 28.732221429960227,
+        "z+y0+y1+y2": 31.293631219223172,
+        "z+y0+y1+y2+y3": 33.94099116435582,
+        "concealment": 9.715363862249308
+      }
+    },
+    {
+      "frame": "frame_023.png",
+      "native_monolithic_bytes": 15526,
+      "component_bytes": {
+        "z": 2169,
+        "y0": 4265,
+        "y1": 3527,
+        "y2": 2979,
+        "y3": 2600
+      },
+      "framed_component_bytes": 15560,
+      "packet_count": 12,
+      "last_packet_bytes": 160,
+      "stage_psnr_db": {
+        "z": 22.058767603489994,
+        "z+y0": 25.412935795136875,
+        "z+y0+y1": 28.170286473995066,
+        "z+y0+y1+y2": 30.872309951351493,
+        "z+y0+y1+y2+y3": 33.73841690957516,
+        "concealment": 9.791962367126976
+      }
+    },
+    {
+      "frame": "frame_024.png",
+      "native_monolithic_bytes": 16066,
+      "component_bytes": {
+        "z": 2197,
+        "y0": 4382,
+        "y1": 3690,
+        "y2": 3109,
+        "y3": 2703
+      },
+      "framed_component_bytes": 16101,
+      "packet_count": 12,
+      "last_packet_bytes": 701,
+      "stage_psnr_db": {
+        "z": 21.928706066468827,
+        "z+y0": 25.41518660918515,
+        "z+y0+y1": 28.163304692493615,
+        "z+y0+y1+y2": 30.827150462764603,
+        "z+y0+y1+y2+y3": 33.55814445957882,
+        "concealment": 9.723933074112551
+      }
+    },
+    {
+      "frame": "frame_025.png",
+      "native_monolithic_bytes": 15614,
+      "component_bytes": {
+        "z": 2172,
+        "y0": 4243,
+        "y1": 3521,
+        "y2": 3032,
+        "y3": 2660
+      },
+      "framed_component_bytes": 15648,
+      "packet_count": 12,
+      "last_packet_bytes": 248,
+      "stage_psnr_db": {
+        "z": 21.956218181919635,
+        "z+y0": 25.460719549344915,
+        "z+y0+y1": 28.181583929211122,
+        "z+y0+y1+y2": 30.895069423878812,
+        "z+y0+y1+y2+y3": 33.52209526908868,
+        "concealment": 9.634892889024737
+      }
+    },
+    {
+      "frame": "frame_026.png",
+      "native_monolithic_bytes": 14980,
+      "component_bytes": {
+        "z": 2172,
+        "y0": 4136,
+        "y1": 3357,
+        "y2": 2870,
+        "y3": 2460
+      },
+      "framed_component_bytes": 15015,
+      "packet_count": 11,
+      "last_packet_bytes": 1015,
+      "stage_psnr_db": {
+        "z": 22.023416222063403,
+        "z+y0": 25.796920741842445,
+        "z+y0+y1": 28.481002006860038,
+        "z+y0+y1+y2": 31.249125095073783,
+        "z+y0+y1+y2+y3": 34.10486096652508,
+        "concealment": 9.594776862387628
+      }
+    },
+    {
+      "frame": "frame_027.png",
+      "native_monolithic_bytes": 15661,
+      "component_bytes": {
+        "z": 2182,
+        "y0": 4301,
+        "y1": 3507,
+        "y2": 3048,
+        "y3": 2637
+      },
+      "framed_component_bytes": 15695,
+      "packet_count": 12,
+      "last_packet_bytes": 295,
+      "stage_psnr_db": {
+        "z": 22.11914697717568,
+        "z+y0": 25.690224867364833,
+        "z+y0+y1": 28.262428879752008,
+        "z+y0+y1+y2": 30.859360678326123,
+        "z+y0+y1+y2+y3": 33.46396868594929,
+        "concealment": 9.629591062878383
+      }
+    },
+    {
+      "frame": "frame_028.png",
+      "native_monolithic_bytes": 15711,
+      "component_bytes": {
+        "z": 2205,
+        "y0": 4336,
+        "y1": 3523,
+        "y2": 3003,
+        "y3": 2659
+      },
+      "framed_component_bytes": 15746,
+      "packet_count": 12,
+      "last_packet_bytes": 346,
+      "stage_psnr_db": {
+        "z": 22.078859988239383,
+        "z+y0": 25.576167647454,
+        "z+y0+y1": 28.211433371797348,
+        "z+y0+y1+y2": 30.880028053376506,
+        "z+y0+y1+y2+y3": 33.55256713482475,
+        "concealment": 9.673326413420257
+      }
+    },
+    {
+      "frame": "frame_029.png",
+      "native_monolithic_bytes": 16437,
+      "component_bytes": {
+        "z": 2220,
+        "y0": 4524,
+        "y1": 3697,
+        "y2": 3194,
+        "y3": 2817
+      },
+      "framed_component_bytes": 16472,
+      "packet_count": 12,
+      "last_packet_bytes": 1072,
+      "stage_psnr_db": {
+        "z": 21.922449393972926,
+        "z+y0": 25.351717916603217,
+        "z+y0+y1": 27.82553436087687,
+        "z+y0+y1+y2": 30.553180208658624,
+        "z+y0+y1+y2+y3": 33.22590062212874,
+        "concealment": 9.779938399469689
+      }
+    },
+    {
+      "frame": "frame_030.png",
+      "native_monolithic_bytes": 17070,
+      "component_bytes": {
+        "z": 2198,
+        "y0": 4661,
+        "y1": 3905,
+        "y2": 3359,
+        "y3": 2961
+      },
+      "framed_component_bytes": 17104,
+      "packet_count": 13,
+      "last_packet_bytes": 304,
+      "stage_psnr_db": {
+        "z": 21.62459837971687,
+        "z+y0": 25.06358241355798,
+        "z+y0+y1": 27.695242710340846,
+        "z+y0+y1+y2": 30.384949506606567,
+        "z+y0+y1+y2+y3": 33.1866236536443,
+        "concealment": 9.902472571040645
+      }
+    },
+    {
+      "frame": "frame_031.png",
+      "native_monolithic_bytes": 17018,
+      "component_bytes": {
+        "z": 2212,
+        "y0": 4643,
+        "y1": 3905,
+        "y2": 3283,
+        "y3": 2990
+      },
+      "framed_component_bytes": 17053,
+      "packet_count": 13,
+      "last_packet_bytes": 253,
+      "stage_psnr_db": {
+        "z": 21.89468450006101,
+        "z+y0": 25.026190072324873,
+        "z+y0+y1": 27.711365309305684,
+        "z+y0+y1+y2": 30.419961088107033,
+        "z+y0+y1+y2+y3": 33.40404294177698,
+        "concealment": 9.978537668516221
+      }
+    },
+    {
+      "frame": "frame_032.png",
+      "native_monolithic_bytes": 16655,
+      "component_bytes": {
+        "z": 2214,
+        "y0": 4537,
+        "y1": 3807,
+        "y2": 3260,
+        "y3": 2851
+      },
+      "framed_component_bytes": 16689,
+      "packet_count": 12,
+      "last_packet_bytes": 1289,
+      "stage_psnr_db": {
+        "z": 21.653147645061736,
+        "z+y0": 24.979597605452053,
+        "z+y0+y1": 27.630820761854615,
+        "z+y0+y1+y2": 30.370084354181436,
+        "z+y0+y1+y2+y3": 33.23051485873356,
+        "concealment": 9.670945731058739
+      }
+    }
+  ]
+}
