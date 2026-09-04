@@ -1,0 +1,43 @@
+FROM nvidia/cuda:12.4.1-cudnn-devel-ubuntu20.04@sha256:f18cf1a9ac2842e59f13b0d0729594da8cbd68cadd2379308cdd98c0374dbd80
+
+ARG MINIFORGE_VERSION=26.3.2-3
+ARG MINIFORGE_SHA256=848194851a98903134187fbb4ab50efe87b003e0c0f808f97644b7524a62bf2c
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    PYTHONUNBUFFERED=1 \
+    PYTHONPATH=/opt/dcvc-rt \
+    PATH=/opt/dcvc-py/bin:/opt/miniforge/bin:${PATH}
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        build-essential \
+        ca-certificates \
+        curl \
+    && rm -rf /var/lib/apt/lists/* \
+    && curl -fL -o /tmp/miniforge.sh \
+        "https://github.com/conda-forge/miniforge/releases/download/${MINIFORGE_VERSION}/Miniforge3-${MINIFORGE_VERSION}-Linux-x86_64.sh" \
+    && echo "${MINIFORGE_SHA256}  /tmp/miniforge.sh" | sha256sum -c - \
+    && bash /tmp/miniforge.sh -b -p /opt/miniforge \
+    && /opt/miniforge/bin/conda create -y -p /opt/dcvc-py python=3.12 pip \
+    && /opt/miniforge/bin/conda clean -afy \
+    && rm /tmp/miniforge.sh
+
+RUN python -m pip install --no-cache-dir \
+        torch==2.4.1+cu124 \
+        --index-url https://download.pytorch.org/whl/cu124 \
+    && python -m pip install --no-cache-dir \
+        numpy==1.26.4 \
+        Pillow==10.4.0 \
+        pybind11==2.13.6 \
+        scipy==1.14.1
+
+WORKDIR /opt/dcvc-rt
+COPY src ./src
+COPY local_tests/natural_720p_i_packet_loss_test.py ./local_tests/natural_720p_i_packet_loss_test.py
+
+# MLCodec_extensions_cpp is the mandatory rANS entropy coder.  The optional
+# CUDA inference extension is deliberately not built; the script can use the
+# repository's PyTorch fallback on the RTX 3090.
+RUN python -m pip install --no-cache-dir --no-build-isolation ./src/cpp \
+    && python -c "import MLCodec_extensions_cpp, numpy, PIL, scipy, torch; print(torch.__version__, torch.version.cuda)"
+
+CMD ["python", "/opt/dcvc-rt/local_tests/natural_720p_i_packet_loss_test.py", "--help"]

@@ -1,0 +1,24 @@
+FROM nvcr.io/nvidia/pytorch:25.08-py3
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    PYTHONUNBUFFERED=1 \
+    PYTHONPATH=/opt/dcvc-rt
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        build-essential \
+        ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /opt/dcvc-rt
+COPY src ./src
+COPY local_tests/natural_720p_i_packet_loss_test.py ./local_tests/natural_720p_i_packet_loss_test.py
+
+# The NGC image already supplies CUDA, PyTorch, NumPy and SciPy.  Pillow is
+# required for PNG I/O and pybind11 is required to build the mandatory rANS
+# extension.  The optional CUDA inference extension is intentionally omitted;
+# DCVC-RT has a built-in PyTorch fallback for it.
+RUN python -m pip install --no-cache-dir Pillow pybind11 \
+    && python -m pip install --no-cache-dir --no-build-isolation ./src/cpp \
+    && python -c "import MLCodec_extensions_cpp, numpy, PIL, scipy, torch; print(torch.__version__, torch.version.cuda)"
+
+CMD ["python", "/opt/dcvc-rt/local_tests/natural_720p_i_packet_loss_test.py", "--help"]
