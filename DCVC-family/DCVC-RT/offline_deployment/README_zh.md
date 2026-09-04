@@ -7,8 +7,8 @@
 local_tests/natural_720p_i_packet_loss_test.py
 ```
 
-对应代码分支：[`docs/offline-i-frame-deployment`](https://github.com/qinyishcn/DCVC/tree/docs/offline-i-frame-deployment/DCVC-family/DCVC-RT/offline_deployment)
-（也可[直接下载该分支 ZIP](https://github.com/qinyishcn/DCVC/archive/refs/heads/docs/offline-i-frame-deployment.zip)）。
+该目录已合入公开仓库的默认分支：[`main`](https://github.com/qinyishcn/DCVC/tree/main/DCVC-family/DCVC-RT/offline_deployment)
+（也可[直接下载 main 分支 ZIP](https://github.com/qinyishcn/DCVC/archive/refs/heads/main.zip)）。
 
 ## 1. 方案结论
 
@@ -77,7 +77,7 @@ nvidia-ctk --version || true
 
 | 内容 | 固定版本/文件 | 官方下载 |
 |---|---|---|
-| 本部署分支 | GitHub ZIP | [直接下载](https://github.com/qinyishcn/DCVC/archive/refs/heads/docs/offline-i-frame-deployment.zip) |
+| 本部署代码 | GitHub main ZIP | [直接下载](https://github.com/qinyishcn/DCVC/archive/refs/heads/main.zip) |
 | 上游 DCVC 源码 | Microsoft/DCVC | [GitHub 仓库](https://github.com/microsoft/DCVC) |
 | DCVC-RT I 帧权重 | `cvpr2025_image.pth.tar` | [作者 OneDrive checkpoint 目录](https://1drv.ms/f/c/2866592d5c55df8c/Esu0KJ-I2kxCjEP565ARx_YB88i0UnR6XnODqFcvZs4LcA?e=by8CO8) |
 | 720P 自然视频 | `Starigrad_105323.webm` | [直接下载](https://upload.wikimedia.org/wikipedia/commons/f/f2/Starigrad_105323.webm)；[来源与许可](https://commons.wikimedia.org/wiki/File:Starigrad_105323.webm) |
@@ -131,7 +131,7 @@ x86 CUDA 基础镜像还固定到 amd64 manifest digest
 ### 4.2 获取代码
 
 ```bash
-git clone --branch docs/offline-i-frame-deployment \
+git clone --branch main \
   https://github.com/qinyishcn/DCVC.git
 cd DCVC/DCVC-family/DCVC-RT
 chmod +x offline_deployment/prepare_bundle.sh \
