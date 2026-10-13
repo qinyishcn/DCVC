@@ -1,0 +1,4 @@
+# Preserve measured artifacts byte-for-byte so SHA256SUMS works after cloning.
+* -text whitespace=cr-at-eol
+*.log -diff
+*.svg whitespace=-blank-at-eol,cr-at-eol

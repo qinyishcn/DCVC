@@ -1,0 +1,22 @@
+[in#0/rawvideo @ 000001d7b603f140] Estimating duration from bitrate, this may be inaccurate
+Input #0, rawvideo, from 'DCVC-family\DCVC-RT\local_tests\natural_720p\rd_comparison_20261013\reference.rgb':
+  Duration: 00:00:14.03, start: 0.000000, bitrate: 326246 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 326246 kb/s, 14.75 tbr, 14.75 tbn
+[in#1/rawvideo @ 000001d7b604aa00] Estimating duration from bitrate, this may be inaccurate
+Input #1, rawvideo, from 'DCVC-family\DCVC-RT\local_tests\natural_720p\rd_comparison_20261013\decoded_yuv420p.rgb':
+  Duration: 00:00:14.03, start: 0.000000, bitrate: 326246 kb/s
+  Stream #1:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 326246 kb/s, 14.75 tbr, 14.75 tbn
+Stream mapping:
+  Stream #0:0 (rawvideo) -> format:default
+  Stream #1:0 (rawvideo) -> format:default
+  psnr:default -> Stream #0:0 (wrapped_avframe)
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf62.12.100
+  Stream #0:0: Video: wrapped_avframe, gbrp(pc, gbr/unknown/unknown, progressive), 1280x720, q=2-31, 200 kb/s, 14.75 fps, 14.75 tbn
+    Metadata:
+      encoder         : Lavc62.28.100 wrapped_avframe
+[Parsed_psnr_2 @ 000001d7b6068e00] PSNR r:45.790988 g:45.857478 b:45.563786 average:45.735587 min:45.402112 max:46.326480
+[out#0/null @ 000001d7b6054600] video:86KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  207 fps=0.0 q=-0.0 Lsize=N/A time=00:00:14.03 bitrate=N/A speed=69.5x elapsed=0:00:00.20    

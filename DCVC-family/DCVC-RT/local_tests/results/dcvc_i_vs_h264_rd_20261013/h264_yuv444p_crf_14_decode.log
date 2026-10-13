@@ -1,0 +1,14 @@
+Input #0, h264, from 'C:\Users\qinyi\Documents\AItest 2\DCVC\DCVC-family\DCVC-RT\local_tests\natural_720p\rd_comparison_20261013\h264_yuv444p_crf_14.h264':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: h264 (High 4:4:4 Predictive), yuv444p(tv, bt709/unknown/unknown, progressive), 1280x720, 25 fps, 29.50 tbr, 1200k tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> rawvideo (native))
+Press [q] to stop, [?] for help
+Output #0, rawvideo, to 'C:\Users\qinyi\Documents\AItest 2\DCVC\DCVC-family\DCVC-RT\local_tests\natural_720p\rd_comparison_20261013\decoded_yuv444p.rgb':
+  Metadata:
+    encoder         : Lavf62.12.100
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24(pc, gbr/unknown/unknown, progressive), 1280x720, q=2-31, 326246 kb/s, 14.75 fps, 14.75 tbn
+    Metadata:
+      encoder         : Lavc62.28.100 rawvideo
+[out#0/rawvideo @ 000001dd8beba8c0] video:558900KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000000%
+frame=  207 fps=0.0 q=-0.0 Lsize=  558900KiB time=00:00:14.03 bitrate=326246.4kbits/s speed=42.2x elapsed=0:00:00.33    

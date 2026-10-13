@@ -137,6 +137,10 @@ So, it does not make sense to compare the numbers in different methods directly,
 
 Please find more details on the [test conditions](../test_conditions.md).
 
+## Local reproducible experiments
+
+- [DCVC-RT all-I versus H.264 video RD curves (720P, 2026-10-13)](local_tests/results/dcvc_i_vs_h264_rd_20261013/README.md): shared contiguous video frames, actual bitstream rates, RGB PSNR, raw data and reproduction scripts.
+
 # Acknowledgement
 The implementation of DCVC-RT is based on [CompressAI](https://github.com/InterDigitalInc/CompressAI).
 

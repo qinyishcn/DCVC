@@ -1,0 +1,18 @@
+Input #0, matroska,webm, from 'C:\Users\qinyi\Documents\AItest 2\DCVC\DCVC-family\DCVC-RT\local_tests\natural_720p\starigrad_105323_720p.webm':
+  Metadata:
+    encoder         : Lavf56.22.100
+    creation_time   : 2015-05-11T08:02:42.000000Z
+  Duration: 00:00:14.19, start: 0.000000, bitrate: 1657 kb/s
+  Stream #0:0: Video: vp8, yuv420p(progressive), 1280x720, SAR 1:1 DAR 16:9, 14.75 fps, 14.75 tbr, 1k tbn (default)
+  Stream #0:1(eng): Audio: opus, 48000 Hz, mono, fltp (default)
+Stream mapping:
+  Stream #0:0 -> #0:0 (vp8 (native) -> rawvideo (native))
+Press [q] to stop, [?] for help
+Output #0, rawvideo, to 'C:\Users\qinyi\Documents\AItest 2\DCVC\DCVC-family\DCVC-RT\local_tests\natural_720p\rd_comparison_20261013\reference.rgb':
+  Metadata:
+    encoder         : Lavf62.12.100
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24(pc, gbr/unknown/unknown, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 326246 kb/s, 14.75 fps, 14.75 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.100 rawvideo
+[out#0/rawvideo @ 000001fb53782d80] video:558900KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000000%
+frame=  207 fps=0.0 q=-0.0 Lsize=  558900KiB time=00:00:14.03 bitrate=326246.4kbits/s speed=55.7x elapsed=0:00:00.25    
