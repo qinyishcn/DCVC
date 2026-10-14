@@ -1,0 +1,19 @@
+{
+  "plot_only_without_ffmpeg": "PASS",
+  "plot_only_preserves_measurements_and_report": true,
+  "source_fixture_sha256": "ca6be6e9d96b29fc6a4b844cdd2375d427c3881ee1f332e62a48da4d5f4b9e7a",
+  "modern_integration": "PASS, 640x360, 24 fps, 12 frames, 6 actual operating points",
+  "resized_integration": "PASS, start 0.5s, duration 0.5s, 320x180, 12 fps, 6 frames, two chroma formats; custom grid without CRF=0",
+  "unit_tests": {
+    "windows": {
+      "returncode": 0,
+      "tests": 7
+    },
+    "linux": {
+      "returncode": 0,
+      "tests": 7
+    }
+  },
+  "legacy_ffmpeg_4.2.2": "PASS; reproduced fps_mode rejection then encoded/decoded 6 points",
+  "linux_ffmpeg_ffprobe_4.4": "PASS; native Linux full 6-point MP4 smoke test and PSNR audit"
+}

@@ -1,0 +1,4 @@
+# Keep logs and result hashes stable across Windows/Linux checkouts.
+* -text whitespace=cr-at-eol
+*.log -diff
+*.svg whitespace=-blank-at-eol,cr-at-eol

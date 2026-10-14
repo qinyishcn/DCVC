@@ -38,6 +38,8 @@ def main(args):
     frame_bytes = args.width * args.height * 3
     assert raw.stat().st_size % frame_bytes == 0
     count = raw.stat().st_size // frame_bytes
+    if count == 0:
+        raise ValueError("RGB reference is empty")
     references = np.memmap(raw, dtype=np.uint8, mode="r",
                            shape=(count, args.height, args.width, 3))
     model = load_official_model(args.checkpoint, 0.12)
@@ -46,6 +48,7 @@ def main(args):
     results = []
     with torch.no_grad():
         for qp in args.qps:
+            print(f"DCVC QP={qp}: starting {count} frames at {args.width}x{args.height}", flush=True)
             stream_path = output / f"dcvc_qp_{qp:02d}.bin"
             rows = []
             with stream_path.open("wb") as handle:
@@ -64,7 +67,7 @@ def main(args):
                     written = write_ip(handle, True, 0, qp, stream)
                     rows.append({"frame_index": index, "entropy_bytes": len(stream),
                                  "framed_bytes": written, "encode_ms": encode_ms})
-                    if (index + 1) % 50 == 0:
+                    if (index + 1) % 25 == 0 or index + 1 == count:
                         print(f"DCVC QP={qp}: encoded {index + 1}/{count}", flush=True)
             # Decode the saved native stream, including its SPS and frame headers.
             with stream_path.open("rb") as handle:
@@ -84,19 +87,22 @@ def main(args):
                     rgb = to_rgb(decoded, args.height, args.width)
                     error = reference.astype(np.float64) - rgb.astype(np.float64)
                     mse = float(np.mean(error * error))
-                    rows[index].update(mse_rgb=mse, psnr_rgb_db=10 * np.log10(255 ** 2 / mse))
-                    if index == count // 2 and qp in (0, 32, 63):
+                    score = float("inf") if mse == 0 else float(10 * np.log10(255 ** 2 / mse))
+                    rows[index].update(mse_rgb=mse, psnr_rgb_db=score)
+                    if (index + 1) % 25 == 0 or index + 1 == count:
+                        print(f"DCVC QP={qp}: decoded {index + 1}/{count}", flush=True)
+                    if index == count // 2:
                         Image.fromarray(rgb).save(output / f"dcvc_qp_{qp:02d}_sample.png")
                 assert handle.read(1) == b"", "extra bytes after final frame"
             mean_mse = float(np.mean([row["mse_rgb"] for row in rows]))
             point = {"codec": "DCVC-RT all-I", "quality": qp, "frames": count,
                      "bytes": stream_path.stat().st_size, "stream_sha256": sha256(stream_path),
                      "entropy_bytes": sum(row["entropy_bytes"] for row in rows),
-                     "psnr_rgb_pooled_db": float(10 * np.log10(255 ** 2 / mean_mse)),
+                     "psnr_rgb_pooled_db": float("inf") if mean_mse == 0 else float(10 * np.log10(255 ** 2 / mean_mse)),
                      "psnr_rgb_mean_frame_db": float(np.mean([row["psnr_rgb_db"] for row in rows])),
                      "mean_mse_rgb": mean_mse, "frame_types": {"I": count}, "per_frame": rows}
             results.append(point)
-            (output / f"dcvc_qp_{qp:02d}.json").write_text(json.dumps(point, indent=2))
+            (output / f"dcvc_qp_{qp:02d}.json").write_text(json.dumps(point, indent=2), encoding="utf-8")
             print(f"DCVC QP={qp} complete: {point['bytes']} bytes, "
                   f"{point['psnr_rgb_pooled_db']:.3f} dB", flush=True)
     metadata = {"torch": torch.__version__, "cuda": torch.version.cuda,
@@ -104,7 +110,7 @@ def main(args):
                 "platform": platform.platform(), "custom_cuda": CUSTOMIZED_CUDA_INFERENCE,
                 "checkpoint_sha256": sha256(args.checkpoint), "reference_sha256": sha256(raw)}
     (output / "dcvc_results.json").write_text(json.dumps({"environment": metadata,
-                                                         "points": results}, indent=2))
+                                                         "points": results}, indent=2), encoding="utf-8")
 
 
 if __name__ == "__main__":

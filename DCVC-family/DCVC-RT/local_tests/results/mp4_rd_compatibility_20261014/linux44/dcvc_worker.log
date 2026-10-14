@@ -1,0 +1,13 @@
+cannot import cuda implementation for inference, fallback to pytorch.
+DCVC QP=0: starting 12 frames at 640x360
+DCVC QP=0: encoded 12/12
+DCVC QP=0: decoded 12/12
+DCVC QP=0 complete: 8317 bytes, 28.832 dB
+DCVC QP=32: starting 12 frames at 640x360
+DCVC QP=32: encoded 12/12
+DCVC QP=32: decoded 12/12
+DCVC QP=32 complete: 31777 bytes, 34.670 dB
+DCVC QP=63: starting 12 frames at 640x360
+DCVC QP=63: encoded 12/12
+DCVC QP=63: decoded 12/12
+DCVC QP=63 complete: 134293 bytes, 40.337 dB

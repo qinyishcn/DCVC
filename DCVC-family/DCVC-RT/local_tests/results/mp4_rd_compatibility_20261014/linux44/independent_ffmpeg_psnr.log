@@ -1,0 +1,21 @@
+[rawvideo @ 0x1be73400] Estimating duration from bitrate, this may be inaccurate
+Input #0, rawvideo, from '/mnt/c/Users/qinyi/Documents/AItest 2/DCVC/DCVC-family/DCVC-RT/local_tests/natural_720p/mp4_compatibility_20261014/linux44_work/reference.rgb':
+  Duration: 00:00:00.50, start: 0.000000, bitrate: 132710 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 640x360, 132710 kb/s, 24 tbr, 24 tbn, 24 tbc
+[rawvideo @ 0x1be7ffc0] Estimating duration from bitrate, this may be inaccurate
+Input #1, rawvideo, from '/mnt/c/Users/qinyi/Documents/AItest 2/DCVC/DCVC-family/DCVC-RT/local_tests/natural_720p/mp4_compatibility_20261014/linux44_work/decoded_yuv420p.rgb':
+  Duration: 00:00:00.50, start: 0.000000, bitrate: 132710 kb/s
+  Stream #1:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 640x360, 132710 kb/s, 24 tbr, 24 tbn, 24 tbc
+Stream mapping:
+  Stream #0:0 (rawvideo) -> format
+  Stream #1:0 (rawvideo) -> format
+  psnr -> Stream #0:0 (wrapped_avframe)
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: wrapped_avframe, gbrp(pc, progressive), 640x360, q=2-31, 200 kb/s, 24 fps, 24 tbn (default)
+    Metadata:
+      encoder         : Lavc58.134.100 wrapped_avframe
+frame=    1 fps=0.0 q=-0.0 size=N/A time=00:00:00.04 bitrate=N/A speed= 353x    frame=   12 fps=0.0 q=-0.0 Lsize=N/A time=00:00:00.50 bitrate=N/A speed=17.6x    
+video:6kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+[Parsed_psnr_2 @ 0x1be93a80] PSNR r:43.720061 g:43.805142 b:42.454095 average:43.281158 min:42.179825 max:43.806463

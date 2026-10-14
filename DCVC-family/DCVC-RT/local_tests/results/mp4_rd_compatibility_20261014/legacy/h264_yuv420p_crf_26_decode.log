@@ -1,0 +1,13 @@
+Input #0, h264, from 'C:\Users\qinyi\Documents\AItest 2\DCVC\DCVC-family\DCVC-RT\local_tests\natural_720p\mp4_compatibility_20261014\legacy_work\h264_yuv420p_crf_26.h264':
+  Duration: N/A, bitrate: N/A
+    Stream #0:0: Video: h264 (High), yuv420p(tv, bt709, progressive), 640x360, 24 fps, 24 tbr, 1200k tbn, 48 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> rawvideo (native))
+Output #0, rawvideo, to 'C:\Users\qinyi\Documents\AItest 2\DCVC\DCVC-family\DCVC-RT\local_tests\natural_720p\mp4_compatibility_20261014\legacy_work\decoded_yuv420p.rgb':
+  Metadata:
+    encoder         : Lavf58.29.100
+    Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 640x360, q=2-31, 132710 kb/s, 24 fps, 24 tbn, 24 tbc
+    Metadata:
+      encoder         : Lavc58.54.100 rawvideo
+frame=   12 fps=0.0 q=-0.0 Lsize=    8100kB time=00:00:00.50 bitrate=132710.4kbits/s speed=  50x    
+video:8100kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000000%

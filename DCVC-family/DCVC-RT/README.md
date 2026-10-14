@@ -139,6 +139,7 @@ Please find more details on the [test conditions](../test_conditions.md).
 
 ## Local reproducible experiments
 
+- [Replace the source with MP4, run RD tests and regenerate plots (legacy FFmpeg supported)](local_tests/rd_comparison/README.md).
 - [DCVC-RT all-I versus H.264 video RD curves (720P, 2026-10-13)](local_tests/results/dcvc_i_vs_h264_rd_20261013/README.md): shared contiguous video frames, actual bitstream rates, RGB PSNR, raw data and reproduction scripts.
 
 # Acknowledgement

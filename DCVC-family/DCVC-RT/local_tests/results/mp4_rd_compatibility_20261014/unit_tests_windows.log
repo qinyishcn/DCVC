@@ -1,0 +1,17 @@
+test_failed_command_preserves_diagnostic_log (test_rd_comparison.ProcessTests.test_failed_command_preserves_diagnostic_log) ... START error.log | log=C:\Users\qinyi\AppData\Local\Temp\tmphbiwaq0z\error.log
+ok
+test_idle_command_is_stopped (test_rd_comparison.ProcessTests.test_idle_command_is_stopped) ... START idle.log | log=C:\Users\qinyi\AppData\Local\Temp\tmp2717emf0\idle.log
+ok
+test_large_stdout_and_stderr_do_not_block (test_rd_comparison.ProcessTests.test_large_stdout_and_stderr_do_not_block) ... START output.log | log=C:\Users\qinyi\AppData\Local\Temp\tmp2wtmf1_0\output.log
+ok
+test_stdin_is_closed (test_rd_comparison.ProcessTests.test_stdin_is_closed) ... START python.exe
+ok
+test_total_timeout_even_when_output_is_active (test_rd_comparison.ProcessTests.test_total_timeout_even_when_output_is_active) ... START active.log | log=C:\Users\qinyi\AppData\Local\Temp\tmp3qjpihhf\active.log
+ok
+test_completed_mp4_commands_use_legacy_sync (test_rd_comparison.ReportTests.test_completed_mp4_commands_use_legacy_sync) ... ok
+test_custom_video_without_overlap_or_444_curve (test_rd_comparison.ReportTests.test_custom_video_without_overlap_or_444_curve) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.824s
+
+OK

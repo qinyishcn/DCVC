@@ -1,0 +1,30 @@
+-vsync is deprecated. Use -fps_mode
+Passing a number to -vsync is deprecated, use a string argument as described in the manual.
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\qinyi\Documents\AItest 2\DCVC\DCVC-family\DCVC-RT\local_tests\natural_720p\mp4_compatibility_20261014\input clip.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.100
+  Duration: 00:00:02.00, start: 0.000000, bitrate: 1518 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt470bg/unknown/unknown, progressive), 640x360 [SAR 1:1 DAR 16:9], 1459 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc62.28.100 libx264
+  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, mono, fltp, 47 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> rawvideo (native))
+Output #0, rawvideo, to 'C:\Users\qinyi\Documents\AItest 2\DCVC\DCVC-family\DCVC-RT\local_tests\natural_720p\mp4_compatibility_20261014\modern_work\reference.rgb':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.100
+  Stream #0:0(und): Video: rawvideo (RGB[24] / 0x18424752), rgb24(pc, gbr/unknown/unknown, progressive), 640x360 [SAR 1:1 DAR 16:9], q=2-31, 132710 kb/s, 24 fps, 24 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.100 rawvideo
+      handler_name    : VideoHandler
+[out#0/rawvideo @ 0000017d7be70b40] video:8100KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000000%
+frame=   12 fps=0.0 q=-0.0 Lsize=    8100KiB time=00:00:00.50 bitrate=132710.4kbits/s speed=44.5x elapsed=0:00:00.01    

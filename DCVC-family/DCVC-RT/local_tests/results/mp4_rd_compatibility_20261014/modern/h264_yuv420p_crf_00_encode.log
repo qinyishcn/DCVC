@@ -1,0 +1,33 @@
+-vsync is deprecated. Use -fps_mode
+Passing a number to -vsync is deprecated, use a string argument as described in the manual.
+[in#0/rawvideo @ 0000017ae6b7bf40] Estimating duration from bitrate, this may be inaccurate
+Input #0, rawvideo, from 'C:\Users\qinyi\Documents\AItest 2\DCVC\DCVC-family\DCVC-RT\local_tests\natural_720p\mp4_compatibility_20261014\modern_work\reference.rgb':
+  Duration: 00:00:00.50, start: 0.000000, bitrate: 132710 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 640x360, 132710 kb/s, 24 tbr, 24 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> h264 (libx264))
+[libx264 @ 0000017ae6b88800] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0000017ae6b88800] profile High 4:4:4 Predictive, level 3.0, 4:2:0, 8-bit
+Output #0, h264, to 'C:\Users\qinyi\Documents\AItest 2\DCVC\DCVC-family\DCVC-RT\local_tests\natural_720p\mp4_compatibility_20261014\modern_work\h264_yuv420p_crf_00.h264':
+  Metadata:
+    encoder         : Lavf62.12.100
+  Stream #0:0: Video: h264, yuv420p(tv, bt709/unknown/unknown, progressive), 640x360, q=2-31, 24 fps, 24 tbn
+    Metadata:
+      encoder         : Lavc62.28.100 libx264
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/h264 @ 0000017ae6cb8fc0] video:431KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000000%
+frame=   12 fps=0.0 q=-1.0 Lsize=     431KiB time=00:00:00.50 bitrate=7068.4kbits/s speed=6.46x elapsed=0:00:00.07    
+[libx264 @ 0000017ae6b88800] frame I:1     Avg QP: 0.00  size:102351
+[libx264 @ 0000017ae6b88800] frame P:11    Avg QP: 0.00  size: 30857
+[libx264 @ 0000017ae6b88800] mb I  I16..4: 22.6%  4.3% 73.0%
+[libx264 @ 0000017ae6b88800] mb P  I16..4:  4.7%  3.6%  4.2%  P16..4: 16.4%  8.4% 11.3%  0.0%  0.0%    skip:51.4%
+[libx264 @ 0000017ae6b88800] 8x8 transform intra:18.5% inter:44.6%
+[libx264 @ 0000017ae6b88800] coded y,uvDC,uvAC intra: 91.9% 85.8% 85.1% inter: 36.4% 30.5% 30.2%
+[libx264 @ 0000017ae6b88800] i16 v,h,dc,p: 23% 74%  3%  0%
+[libx264 @ 0000017ae6b88800] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 39% 55%  5%  1%  0%  0%  0%  0%  0%
+[libx264 @ 0000017ae6b88800] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 44% 46%  3%  2%  1%  1%  1%  1%  1%
+[libx264 @ 0000017ae6b88800] i8c dc,h,v,p: 10% 51% 39%  0%
+[libx264 @ 0000017ae6b88800] Weighted P-Frames: Y:18.2% UV:18.2%
+[libx264 @ 0000017ae6b88800] ref P L0: 78.7% 12.0%  6.4%  1.7%  0.5%  0.6%  0.1%
+[libx264 @ 0000017ae6b88800] kb/s:7068.40

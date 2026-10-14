@@ -1,0 +1,62 @@
+[
+  {
+    "index": 0,
+    "time_seconds": 0.0,
+    "rgb_sha256": "f01b85d7e266b94d955e73ac5fc2da482a8b8fce812131192d5032e76dcfe844"
+  },
+  {
+    "index": 1,
+    "time_seconds": 0.041666666666666664,
+    "rgb_sha256": "f87ed966724d63e91f4d85c2fc2082be3fd5776972c6619aef6982018f3bd2e6"
+  },
+  {
+    "index": 2,
+    "time_seconds": 0.08333333333333333,
+    "rgb_sha256": "e19a0e708e75501c1fed1001e5de7958b5c1e2666705ccd051ab10b41e9841fb"
+  },
+  {
+    "index": 3,
+    "time_seconds": 0.125,
+    "rgb_sha256": "769b5920068241bcba2fa72c6fcdd9100414978705f427009253a7bf4e204b85"
+  },
+  {
+    "index": 4,
+    "time_seconds": 0.16666666666666666,
+    "rgb_sha256": "3e77d66ecfb13ad5455597aff423c22dcc7c7817a554ec730ba7ea39b44ef2c2"
+  },
+  {
+    "index": 5,
+    "time_seconds": 0.20833333333333334,
+    "rgb_sha256": "d4de4ad889ac25de427febf9d174a1fcc35bd70ffc5dd7fdb2a8cb772b1e519b"
+  },
+  {
+    "index": 6,
+    "time_seconds": 0.25,
+    "rgb_sha256": "835513208cdf364c39a82221855253f0c0d46e6563ccb685a9d393b402023bd6"
+  },
+  {
+    "index": 7,
+    "time_seconds": 0.2916666666666667,
+    "rgb_sha256": "c60dc94a2a6536a3dbcb173d0c5957f0a8af2b819da858aeb04ac2427d0f2348"
+  },
+  {
+    "index": 8,
+    "time_seconds": 0.3333333333333333,
+    "rgb_sha256": "e0c7046cf93987a40936c95ea50109cf804bc5bc5f98abc3b4baa4eb3a399d3d"
+  },
+  {
+    "index": 9,
+    "time_seconds": 0.375,
+    "rgb_sha256": "73c15cc0f9abcde4a41d73f07e25edbbd0c2502e2cb976a40b57531abcc58031"
+  },
+  {
+    "index": 10,
+    "time_seconds": 0.4166666666666667,
+    "rgb_sha256": "4e626a1801943b5996e749033da0b3dbdf04d959de4f88d85bbd0a51ef052b53"
+  },
+  {
+    "index": 11,
+    "time_seconds": 0.4583333333333333,
+    "rgb_sha256": "fd1e4d12e8b5632917a1ec3562a4b2f9d4a220319e17b0fb99fa9fa3f7239b31"
+  }
+]

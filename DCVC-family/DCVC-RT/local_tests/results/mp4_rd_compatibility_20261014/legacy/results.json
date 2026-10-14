@@ -1,0 +1,614 @@
+[
+  {
+    "codec": "H.264 4:2:0 inter",
+    "quality": 38,
+    "frames": 12,
+    "bytes": 6747,
+    "stream_sha256": "be4f75e5f6a4fa14a630ea143550a6a26bb868f9db02673fdc29b2518dece48e",
+    "psnr_rgb_pooled_db": 31.70817661820674,
+    "psnr_rgb_mean_frame_db": 31.73497487793404,
+    "mean_mse_rgb": 43.87960394965278,
+    "per_frame": [
+      {
+        "frame_index": 0,
+        "mse_rgb": 46.87396701388889,
+        "psnr_rgb_db": 31.421486508011725
+      },
+      {
+        "frame_index": 1,
+        "mse_rgb": 46.76037760416666,
+        "psnr_rgb_db": 31.432023513048875
+      },
+      {
+        "frame_index": 2,
+        "mse_rgb": 47.74269097222222,
+        "psnr_rgb_db": 31.341734669041116
+      },
+      {
+        "frame_index": 3,
+        "mse_rgb": 42.78069733796296,
+        "psnr_rgb_db": 31.818325014467757
+      },
+      {
+        "frame_index": 4,
+        "mse_rgb": 45.40978587962963,
+        "psnr_rgb_db": 31.559309067871276
+      },
+      {
+        "frame_index": 5,
+        "mse_rgb": 40.19081452546296,
+        "psnr_rgb_db": 32.08953552975718
+      },
+      {
+        "frame_index": 6,
+        "mse_rgb": 41.681456886574075,
+        "psnr_rgb_db": 31.931374704722653
+      },
+      {
+        "frame_index": 7,
+        "mse_rgb": 40.726066261574076,
+        "psnr_rgb_db": 32.03207897342098
+      },
+      {
+        "frame_index": 8,
+        "mse_rgb": 39.092505787037034,
+        "psnr_rgb_db": 32.209868517402306
+      },
+      {
+        "frame_index": 9,
+        "mse_rgb": 39.088480902777775,
+        "psnr_rgb_db": 32.210315681118104
+      },
+      {
+        "frame_index": 10,
+        "mse_rgb": 39.0769921875,
+        "psnr_rgb_db": 32.21159232807947
+      },
+      {
+        "frame_index": 11,
+        "mse_rgb": 57.13141203703704,
+        "psnr_rgb_db": 30.56205402826702
+      }
+    ],
+    "frame_types": {
+      "I": 1,
+      "B": 7,
+      "P": 4
+    },
+    "encode_wall_seconds": 0.10525930020958185,
+    "bitrate_kbps": 107.952
+  },
+  {
+    "codec": "H.264 4:2:0 inter",
+    "quality": 26,
+    "frames": 12,
+    "bytes": 26241,
+    "stream_sha256": "0b203cde57ff203ae1595c24071796ad44bf30bf20d9503d0a511c01708af204",
+    "psnr_rgb_pooled_db": 37.26945607596759,
+    "psnr_rgb_mean_frame_db": 37.29333003402105,
+    "mean_mse_rgb": 12.193678867669753,
+    "per_frame": [
+      {
+        "frame_index": 0,
+        "mse_rgb": 11.747861689814815,
+        "psnr_rgb_db": 37.43121536032453
+      },
+      {
+        "frame_index": 1,
+        "mse_rgb": 11.61775462962963,
+        "psnr_rgb_db": 37.479581610571195
+      },
+      {
+        "frame_index": 2,
+        "mse_rgb": 11.77121383101852,
+        "psnr_rgb_db": 37.422591118789896
+      },
+      {
+        "frame_index": 3,
+        "mse_rgb": 12.048424479166666,
+        "psnr_rgb_db": 37.32150101072347
+      },
+      {
+        "frame_index": 4,
+        "mse_rgb": 12.121493055555556,
+        "psnr_rgb_db": 37.29524243855082
+      },
+      {
+        "frame_index": 5,
+        "mse_rgb": 12.204092881944444,
+        "psnr_rgb_db": 37.265748565908844
+      },
+      {
+        "frame_index": 6,
+        "mse_rgb": 12.377510127314816,
+        "psnr_rgb_db": 37.20447070523234
+      },
+      {
+        "frame_index": 7,
+        "mse_rgb": 12.302670717592592,
+        "psnr_rgb_db": 37.23080960647343
+      },
+      {
+        "frame_index": 8,
+        "mse_rgb": 11.165611979166666,
+        "psnr_rgb_db": 37.651978294397274
+      },
+      {
+        "frame_index": 9,
+        "mse_rgb": 11.214732349537037,
+        "psnr_rgb_db": 37.63291447684208
+      },
+      {
+        "frame_index": 10,
+        "mse_rgb": 11.17469039351852,
+        "psnr_rgb_db": 37.64844861479966
+      },
+      {
+        "frame_index": 11,
+        "mse_rgb": 16.57809027777778,
+        "psnr_rgb_db": 35.93545860563896
+      }
+    ],
+    "frame_types": {
+      "I": 1,
+      "B": 7,
+      "P": 4
+    },
+    "encode_wall_seconds": 0.2060373998247087,
+    "bitrate_kbps": 419.856
+  },
+  {
+    "codec": "H.264 4:2:0 inter",
+    "quality": 14,
+    "frames": 12,
+    "bytes": 96263,
+    "stream_sha256": "f744de9cddecb677e827536d495a24fef42ce22fea70923e2dd3e1acf444ad56",
+    "psnr_rgb_pooled_db": 43.28115818578068,
+    "psnr_rgb_mean_frame_db": 43.30380055609161,
+    "mean_mse_rgb": 3.0546717062114195,
+    "per_frame": [
+      {
+        "frame_index": 0,
+        "mse_rgb": 2.7149797453703703,
+        "psnr_rgb_db": 43.793137669086775
+      },
+      {
+        "frame_index": 1,
+        "mse_rgb": 2.706662326388889,
+        "psnr_rgb_db": 43.806462827602644
+      },
+      {
+        "frame_index": 2,
+        "mse_rgb": 2.7171310763888887,
+        "psnr_rgb_db": 43.789697712614625
+      },
+      {
+        "frame_index": 3,
+        "mse_rgb": 2.8784794560185185,
+        "psnr_rgb_db": 43.539172266666945
+      },
+      {
+        "frame_index": 4,
+        "mse_rgb": 2.8738570601851854,
+        "psnr_rgb_db": 43.54615197458224
+      },
+      {
+        "frame_index": 5,
+        "mse_rgb": 3.0322526041666666,
+        "psnr_rgb_db": 43.313149831605166
+      },
+      {
+        "frame_index": 6,
+        "mse_rgb": 3.052271412037037,
+        "psnr_rgb_db": 43.284572118245336
+      },
+      {
+        "frame_index": 7,
+        "mse_rgb": 3.167093460648148,
+        "psnr_rgb_db": 43.124194813151135
+      },
+      {
+        "frame_index": 8,
+        "mse_rgb": 3.194175347222222,
+        "psnr_rgb_db": 43.08721607412107
+      },
+      {
+        "frame_index": 9,
+        "mse_rgb": 3.188453414351852,
+        "psnr_rgb_db": 43.09500284859902
+      },
+      {
+        "frame_index": 10,
+        "mse_rgb": 3.1943171296296295,
+        "psnr_rgb_db": 43.08702330464564
+      },
+      {
+        "frame_index": 11,
+        "mse_rgb": 3.9363874421296297,
+        "psnr_rgb_db": 42.179825232178736
+      }
+    ],
+    "frame_types": {
+      "I": 1,
+      "B": 7,
+      "P": 4
+    },
+    "encode_wall_seconds": 0.2072175000794232,
+    "bitrate_kbps": 1540.208
+  },
+  {
+    "codec": "DCVC-RT all-I",
+    "quality": 0,
+    "frames": 12,
+    "bytes": 8317,
+    "stream_sha256": "c5008ee69af53071fe6c75b4879f67d379e37092ff2f13638ae550aed7ae3c6b",
+    "entropy_bytes": 8263,
+    "psnr_rgb_pooled_db": 28.832058209925222,
+    "psnr_rgb_mean_frame_db": 28.89555491125158,
+    "mean_mse_rgb": 85.08921947337963,
+    "frame_types": {
+      "I": 12
+    },
+    "per_frame": [
+      {
+        "frame_index": 0,
+        "entropy_bytes": 739,
+        "framed_bytes": 743,
+        "encode_ms": 629.4004690000747,
+        "decode_ms": 28.837848000080157,
+        "mse_rgb": 105.2894386574074,
+        "psnr_rgb_db": 27.906955505831274
+      },
+      {
+        "frame_index": 1,
+        "entropy_bytes": 739,
+        "framed_bytes": 743,
+        "encode_ms": 26.315554999996493,
+        "decode_ms": 25.31360999989829,
+        "mse_rgb": 105.28948350694445,
+        "psnr_rgb_db": 27.906953655892423
+      },
+      {
+        "frame_index": 2,
+        "entropy_bytes": 739,
+        "framed_bytes": 743,
+        "encode_ms": 23.00513700004103,
+        "decode_ms": 19.573755999999776,
+        "mse_rgb": 105.28950954861111,
+        "psnr_rgb_db": 27.906952581734746
+      },
+      {
+        "frame_index": 3,
+        "entropy_bytes": 706,
+        "framed_bytes": 710,
+        "encode_ms": 28.952475999972194,
+        "decode_ms": 19.160092999982226,
+        "mse_rgb": 91.42953703703704,
+        "psnr_rgb_db": 28.519938401896916
+      },
+      {
+        "frame_index": 4,
+        "entropy_bytes": 709,
+        "framed_bytes": 713,
+        "encode_ms": 29.30311399995844,
+        "decode_ms": 25.671338000051946,
+        "mse_rgb": 90.77692708333333,
+        "psnr_rgb_db": 28.551048836434944
+      },
+      {
+        "frame_index": 5,
+        "entropy_bytes": 682,
+        "framed_bytes": 686,
+        "encode_ms": 24.372282999934214,
+        "decode_ms": 23.480385000084425,
+        "mse_rgb": 85.2248900462963,
+        "psnr_rgb_db": 28.825139112757828
+      },
+      {
+        "frame_index": 6,
+        "entropy_bytes": 683,
+        "framed_bytes": 687,
+        "encode_ms": 26.727625999910742,
+        "decode_ms": 26.31763699992007,
+        "mse_rgb": 85.39360532407407,
+        "psnr_rgb_db": 28.81655010980421
+      },
+      {
+        "frame_index": 7,
+        "entropy_bytes": 688,
+        "framed_bytes": 692,
+        "encode_ms": 29.317756000068584,
+        "decode_ms": 19.32714899999155,
+        "mse_rgb": 80.87800925925926,
+        "psnr_rgb_db": 29.052499079283734
+      },
+      {
+        "frame_index": 8,
+        "entropy_bytes": 641,
+        "framed_bytes": 645,
+        "encode_ms": 22.855747999983578,
+        "decode_ms": 18.914233000032254,
+        "mse_rgb": 68.98429976851853,
+        "psnr_rgb_db": 29.743301005619124
+      },
+      {
+        "frame_index": 9,
+        "entropy_bytes": 642,
+        "framed_bytes": 646,
+        "encode_ms": 27.477229999931296,
+        "decode_ms": 25.236933000087447,
+        "mse_rgb": 69.15987991898149,
+        "psnr_rgb_db": 29.732261303228356
+      },
+      {
+        "frame_index": 10,
+        "entropy_bytes": 647,
+        "framed_bytes": 651,
+        "encode_ms": 23.26574099993195,
+        "decode_ms": 18.630959999995866,
+        "mse_rgb": 68.4418359375,
+        "psnr_rgb_db": 29.77758709986705
+      },
+      {
+        "frame_index": 11,
+        "entropy_bytes": 648,
+        "framed_bytes": 652,
+        "encode_ms": 31.1072020000438,
+        "decode_ms": 22.746847999997044,
+        "mse_rgb": 64.91321759259259,
+        "psnr_rgb_db": 30.007472242668292
+      }
+    ],
+    "bitrate_kbps": 133.072
+  },
+  {
+    "codec": "DCVC-RT all-I",
+    "quality": 32,
+    "frames": 12,
+    "bytes": 31777,
+    "stream_sha256": "fd5b08b9ffbe6e2cf3f0ac3d047c7b5f6279d607fbf5fed13d34b967afaeb314",
+    "entropy_bytes": 31723,
+    "psnr_rgb_pooled_db": 34.67026710225288,
+    "psnr_rgb_mean_frame_db": 34.75122231780239,
+    "mean_mse_rgb": 22.184704619984572,
+    "frame_types": {
+      "I": 12
+    },
+    "per_frame": [
+      {
+        "frame_index": 0,
+        "entropy_bytes": 3112,
+        "framed_bytes": 3116,
+        "encode_ms": 22.090962999982366,
+        "decode_ms": 18.635121999977855,
+        "mse_rgb": 27.323404224537036,
+        "psnr_rgb_db": 33.76545553712421
+      },
+      {
+        "frame_index": 1,
+        "entropy_bytes": 3108,
+        "framed_bytes": 3112,
+        "encode_ms": 22.01826800001072,
+        "decode_ms": 19.44485900003201,
+        "mse_rgb": 27.31527633101852,
+        "psnr_rgb_db": 33.76674762518151
+      },
+      {
+        "frame_index": 2,
+        "entropy_bytes": 3109,
+        "framed_bytes": 3113,
+        "encode_ms": 26.184065000052215,
+        "decode_ms": 19.060023999941222,
+        "mse_rgb": 27.259622395833333,
+        "psnr_rgb_db": 33.77560525236524
+      },
+      {
+        "frame_index": 3,
+        "entropy_bytes": 2767,
+        "framed_bytes": 2771,
+        "encode_ms": 21.748636999973314,
+        "decode_ms": 23.18826700002319,
+        "mse_rgb": 25.083939525462963,
+        "psnr_rgb_db": 34.13684615798141
+      },
+      {
+        "frame_index": 4,
+        "entropy_bytes": 2768,
+        "framed_bytes": 2772,
+        "encode_ms": 26.40419199997268,
+        "decode_ms": 26.363599999967846,
+        "mse_rgb": 24.97755931712963,
+        "psnr_rgb_db": 34.15530361853362
+      },
+      {
+        "frame_index": 5,
+        "entropy_bytes": 2592,
+        "framed_bytes": 2596,
+        "encode_ms": 22.077169999988655,
+        "decode_ms": 21.61044900003617,
+        "mse_rgb": 23.138532986111112,
+        "psnr_rgb_db": 34.48744540229423
+      },
+      {
+        "frame_index": 6,
+        "entropy_bytes": 2602,
+        "framed_bytes": 2606,
+        "encode_ms": 22.18996600004175,
+        "decode_ms": 25.569361999941975,
+        "mse_rgb": 23.132779224537035,
+        "psnr_rgb_db": 34.48852547839118
+      },
+      {
+        "frame_index": 7,
+        "entropy_bytes": 2573,
+        "framed_bytes": 2577,
+        "encode_ms": 24.563897000007273,
+        "decode_ms": 19.103202999986024,
+        "mse_rgb": 19.70732494212963,
+        "psnr_rgb_db": 35.18452683403116
+      },
+      {
+        "frame_index": 8,
+        "entropy_bytes": 2289,
+        "framed_bytes": 2293,
+        "encode_ms": 22.127406999970844,
+        "decode_ms": 19.015555000009954,
+        "mse_rgb": 17.486629050925927,
+        "psnr_rgb_db": 35.70374263549376
+      },
+      {
+        "frame_index": 9,
+        "entropy_bytes": 2292,
+        "framed_bytes": 2296,
+        "encode_ms": 21.942113999898538,
+        "decode_ms": 19.648340000003373,
+        "mse_rgb": 17.521296296296295,
+        "psnr_rgb_db": 35.69514126986629
+      },
+      {
+        "frame_index": 10,
+        "entropy_bytes": 2285,
+        "framed_bytes": 2289,
+        "encode_ms": 22.677993999991486,
+        "decode_ms": 19.6095559999776,
+        "mse_rgb": 17.585500578703705,
+        "psnr_rgb_db": 35.67925625663082
+      },
+      {
+        "frame_index": 11,
+        "entropy_bytes": 2226,
+        "framed_bytes": 2230,
+        "encode_ms": 25.00759300005484,
+        "decode_ms": 18.826477999937197,
+        "mse_rgb": 15.68459056712963,
+        "psnr_rgb_db": 36.17607174573524
+      }
+    ],
+    "bitrate_kbps": 508.432
+  },
+  {
+    "codec": "DCVC-RT all-I",
+    "quality": 63,
+    "frames": 12,
+    "bytes": 134293,
+    "stream_sha256": "ef20a903574970fe7ba962a686c8c96b5e585c76e94dc3bd9d6eef9efbc46b11",
+    "entropy_bytes": 134239,
+    "psnr_rgb_pooled_db": 40.337009306705724,
+    "psnr_rgb_mean_frame_db": 40.41282472361676,
+    "mean_mse_rgb": 6.016991946373458,
+    "frame_types": {
+      "I": 12
+    },
+    "per_frame": [
+      {
+        "frame_index": 0,
+        "entropy_bytes": 13678,
+        "framed_bytes": 13682,
+        "encode_ms": 23.223666000035337,
+        "decode_ms": 19.310602000018662,
+        "mse_rgb": 7.461276041666666,
+        "psnr_rgb_db": 39.40267253172248
+      },
+      {
+        "frame_index": 1,
+        "entropy_bytes": 13676,
+        "framed_bytes": 13680,
+        "encode_ms": 22.107254999923498,
+        "decode_ms": 19.544924999991053,
+        "mse_rgb": 7.463697916666667,
+        "psnr_rgb_db": 39.40126307270362
+      },
+      {
+        "frame_index": 2,
+        "entropy_bytes": 13674,
+        "framed_bytes": 13678,
+        "encode_ms": 22.116233000019747,
+        "decode_ms": 19.537766999974338,
+        "mse_rgb": 7.462329282407407,
+        "psnr_rgb_db": 39.4020595208144
+      },
+      {
+        "frame_index": 3,
+        "entropy_bytes": 12552,
+        "framed_bytes": 12556,
+        "encode_ms": 22.442036000029475,
+        "decode_ms": 19.275938999953723,
+        "mse_rgb": 6.65666087962963,
+        "psnr_rgb_db": 39.89823928275109
+      },
+      {
+        "frame_index": 4,
+        "entropy_bytes": 12554,
+        "framed_bytes": 12558,
+        "encode_ms": 21.804127000109474,
+        "decode_ms": 21.09954499997002,
+        "mse_rgb": 6.678881655092592,
+        "psnr_rgb_db": 39.88376612716187
+      },
+      {
+        "frame_index": 5,
+        "entropy_bytes": 11661,
+        "framed_bytes": 11665,
+        "encode_ms": 21.943179999993845,
+        "decode_ms": 23.43915599999491,
+        "mse_rgb": 6.20169994212963,
+        "psnr_rgb_db": 40.205696109997845
+      },
+      {
+        "frame_index": 6,
+        "entropy_bytes": 11686,
+        "framed_bytes": 11690,
+        "encode_ms": 21.890383000027214,
+        "decode_ms": 21.341418000019985,
+        "mse_rgb": 6.230684317129629,
+        "psnr_rgb_db": 40.1854461295157
+      },
+      {
+        "frame_index": 7,
+        "entropy_bytes": 10048,
+        "framed_bytes": 10052,
+        "encode_ms": 29.25587100003213,
+        "decode_ms": 20.03703000002588,
+        "mse_rgb": 5.272022569444444,
+        "psnr_rgb_db": 40.911031000702344
+      },
+      {
+        "frame_index": 8,
+        "entropy_bytes": 8921,
+        "framed_bytes": 8925,
+        "encode_ms": 21.701845000052344,
+        "decode_ms": 24.348767999981646,
+        "mse_rgb": 4.728446180555555,
+        "psnr_rgb_db": 41.383619106320666
+      },
+      {
+        "frame_index": 9,
+        "entropy_bytes": 8924,
+        "framed_bytes": 8928,
+        "encode_ms": 22.50028499997825,
+        "decode_ms": 19.191642999999203,
+        "mse_rgb": 4.744139178240741,
+        "psnr_rgb_db": 41.36922939479806
+      },
+      {
+        "frame_index": 10,
+        "entropy_bytes": 8910,
+        "framed_bytes": 8914,
+        "encode_ms": 21.76467199990384,
+        "decode_ms": 23.059456000055434,
+        "mse_rgb": 4.7548596643518515,
+        "psnr_rgb_db": 41.35942657238431
+      },
+      {
+        "frame_index": 11,
+        "entropy_bytes": 7955,
+        "framed_bytes": 7959,
+        "encode_ms": 22.789906999946652,
+        "decode_ms": 19.746555000097032,
+        "mse_rgb": 4.549205729166666,
+        "psnr_rgb_db": 41.551447834528716
+      }
+    ],
+    "bitrate_kbps": 2148.688
+  }
+]
